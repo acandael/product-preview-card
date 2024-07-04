@@ -1,0 +1,140 @@
+:root {
+  --aurometal-saurus: hsla(228, 12%, 48%, 1);
+  --gun-metal: hsla(212, 21%, 14%, 1);
+  --deep-aquamarine: hsla(157, 36%, 37%, 1);
+  --pure-white: hsla(0, 0%, 100%, 1);
+  --cream: hsla(28, 38%, 92%, 1);
+}
+
+body {
+  background-color: var(--cream);
+}
+
+article {
+  background-color: var(--pure-white);
+  border-radius: 8px;
+}
+
+.content {
+  padding: 24px;
+}
+
+picture img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+  height: auto;
+}
+
+.tag {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--aurometal-saurus);
+  margin-block-end: 0px;
+}
+
+h1 {
+  font-family: "Fraunces", serif;
+  color: var(--gun-metal);
+  font-optical-sizing: auto;
+  font-size: 2rem;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "SOFT" 0, "WONK" 0;
+  margin-top: 12px;
+  margin-bottom: 16px;
+}
+
+.description {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 0.88rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 23px;
+  color: var(--aurometal-saurus);
+  margin-block-start: 0px;
+  margin-bottom: 24px;
+}
+
+.discount-price {
+  font-family: "Fraunces", serif;
+  color: var(--deep-aquamarine);
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-right: 19px;
+}
+
+.original-price {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 0.81rem;
+  font-weight: 500;
+  font-style: normal;
+  text-decoration: line-through;
+  line-height: 23px;
+  color: var(--aurometal-saurus);
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: var(--deep-aquamarine);
+  color: var(--pure-white);
+  border-radius: 8px;
+  width: 100%;
+  height: 48px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.88rem;
+  font-style: normal;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.cta:hover {
+  background-color: hsla(157, 43%, 18%, 1);
+}
+
+.cta img {
+  margin-right: 11px;
+}
+
+@media (max-width: 430px) {
+  body {
+    padding: 28px 16px;
+  }
+}
+
+@media (min-width: 431px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  article {
+    max-width: 600px;
+    display: flex;
+    padding-bottom: 0;
+  }
+
+  picture {
+    width: 60%;
+  }
+  picture img {
+    border-radius: 8px 0 0 8px;
+    height: 100%;
+  }
+
+  .content {
+    width: 50%;
+    padding: 32px;
+  }
+}

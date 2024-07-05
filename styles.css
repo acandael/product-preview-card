@@ -26,6 +26,7 @@ picture img {
 }
 
 .tag {
+  text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -56,6 +57,11 @@ h1 {
   color: var(--aurometal-saurus);
   margin-block-start: 0px;
   margin-bottom: 24px;
+}
+
+p.price {
+  display: flex;
+  align-items: center;
 }
 
 .discount-price {
